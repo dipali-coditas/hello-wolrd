@@ -5,7 +5,7 @@ pipeline {
         stage("Clone Code") {
             steps {
                 echo "Cloning the code"
-                git url: "https://github.com/dipali-coditas/notes-app-gcr.git", branch: "main"
+                git url: "https://github.com/dipali-coditas/hello-wolrd.git", branch: "main"
             }
         }
     }
