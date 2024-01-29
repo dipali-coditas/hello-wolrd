@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage("Clone Code") {
       steps {
-        echo "Cloning code"
-        // git url: "https://github.com/dipali-coditas/hello-world.git", branch: "main" 
+        echo "Cloning code" 
         git branch: 'main', url: 'https://github.com/dipali-coditas/hello-wolrd.git' 
       }
     }
