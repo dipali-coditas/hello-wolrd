@@ -21,8 +21,7 @@ pipeline {
       steps {
         script {
           sh """
-            cd /var/www/html
-            sudo rm index.html || echo 'No file found'
+            sudo rm /var/www/html/index.html || echo 'No file found'
             sudo cp index.html /var/www/html/
           """  
         }
