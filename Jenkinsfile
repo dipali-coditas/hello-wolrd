@@ -4,7 +4,8 @@ pipeline {
     stage("Clone Code") {
       steps {
         echo "Cloning code"
-        git url: "https://github.com/dipali-coditas/hello-world.git", branch: "main"  
+        // git url: "https://github.com/dipali-coditas/hello-world.git", branch: "main" 
+        git branch: 'main', url: 'https://github.com/dipali-coditas/hello-wolrd.git' 
       }
     }
     stage("Configure") {
