@@ -23,6 +23,7 @@ pipeline {
           sh """
             cd /var/www/html
             sudo rm index.html
+            sudo cp index.html /var/www/html/
           """  
         }
       }
